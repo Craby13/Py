@@ -6,7 +6,7 @@ for x in range(len(list)):
 msg = input("Veuillez indiqué le message crypté: ")
 key = int(input("Veuillez indiqué la clé de chiffrement"))
 
-def décryptage_msg(lettre, liste, clef):
+def decryptage_msg(lettre, liste, clef):
     for i in range(len(list)):
         if lettre == ' ':
             return ' '
@@ -17,7 +17,7 @@ def décryptage_msg(lettre, liste, clef):
 message_décrypté = str()
 
 for lettre in msg:
-    message_décrypté += décryptage_msg(lettre, list, key)
+    message_décrypté += decryptage_msg(lettre, list, key)
 
 print(message_décrypté)
 
